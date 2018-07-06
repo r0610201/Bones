@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         val playersCount = 2
 
+        
         val vMain = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT)
         vMain.width = 150
         vMain.height = 120
