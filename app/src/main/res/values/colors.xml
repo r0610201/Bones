@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="TextColor">#ff0a0a4c</color>
+    <color name="BorderColor">#ff000000</color>
+    <color name="BackgroundColorStart">#ffebebeb</color>
+    <color name="BackgroundColorEnd">#ffb9b7b9</color>
+    <color name="AvailableBackgroundColorStart">#ffffffff</color>
+    <color name="AvailableBackgroundColorEnd">#ffe3e3e3</color>
+    <color name="BackgroundColorStartPressed">#ffffffc8</color>
+    <color name="BackgroundColorEndPressed">#ffffffc8</color>
+    <color name="TitleBackgroundColorStart">#ffffffc8</color>
+    <color name="TitleBackgroundColorEnd">#ffffffc8</color>
+    <color name="ActiveBackgroundColorStart">#ffffff96</color>
+    <color name="ActiveBackgroundColorEnd">#ffffff96</color>
+    <color name="ReportBackground">#ffffffff</color>
+    <color name="ReportBackgroundHeader">#ffd5d9a3</color>
+    <color name="ReportText">#ff806a26</color>
+    <color name="ReportTextHeader">#ff787e26</color>
+    <color name="InputCombinationColor">#ffc8c3b4</color>
+</resources>
