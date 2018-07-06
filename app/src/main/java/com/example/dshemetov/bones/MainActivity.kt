@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
 
                 tRow.addView(b)
 
+                // test
+
             }
 
             mainTable.addView(tRow)
