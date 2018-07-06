@@ -1,53 +1,70 @@
 package com.example.dshemetov.bones
 
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.support.v4.app.NotificationCompatSideChannelService
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TableLayout
 import android.widget.TableRow
-import android.widget.TextView
 
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    var mTitles: Array<String> = emptyArray()
 
-        for (i in 1..30) {
+    fun createGameTable() {
 
-            var tRow: TableRow = TableRow(this)
+        val playersCount = 2
 
-            for (j in 1..20)  {
+        val vMain = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT)
+        vMain.width = 150
+        vMain.height = 120
+        vMain.setMargins(0, 0, 1, 1)
 
-                var b: Button = Button(this)
-                b.text = i.toString() + j.toString()
-                b.width = 30
+        val vTitle = TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT)
+        vTitle.width = 100
+        vTitle.height = 120
+        vTitle.setMargins(0, 0, 1, 1)
 
-                //var tLayout: ViewGroup.LayoutParams = ViewGroup.LayoutParams(this)
-                //tLayout.
-                //b.setMargins(0, 0, paramInt3, paramInt4);
+        for (i in 0..mTitles.size - 1) {
 
-                if (j == 1)
+            val tRow: TableRow = TableRow(this)
+            tRow.setBackgroundResource(R.color.BorderColor)
+
+            for (j in 0..playersCount * 3) {
+
+                val b = Button(this)
+                if (j == 0) {
+                    b.text = mTitles[i]
                     b.setBackgroundResource(R.drawable.background_title)
-                else
+                    tRow.addView(b, vTitle)
+                }
+                else {
                     b.setBackgroundResource(R.drawable.background_available)
-
-                tRow.addView(b)
-
-                // test
+                    tRow.addView(b, vMain)
+                }
 
             }
 
             mainTable.addView(tRow)
 
         }
+
+    }
+
+    fun createGridButton(){
+
+
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        mTitles = resources.getStringArray(R.array.short_titles)
+        createGameTable()
 
     }
 

@@ -6,6 +6,7 @@
           xmlns:android="http://schemas.android.com/apk/res/android">
             <gradient android:startColor="@color/BackgroundColorStartPressed" android:endColor="@color/BackgroundColorEndPressed" android:angle="135.0" />
             <corners android:radius="3.0dip" />
+            <padding android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp" />
         </shape>
     </item>
     <item>
@@ -13,7 +14,7 @@
           xmlns:android="http://schemas.android.com/apk/res/android">
             <gradient android:startColor="@color/AvailableBackgroundColorStart" android:endColor="@color/AvailableBackgroundColorEnd" android:angle="135.0" />
             <corners android:radius="3.0dip" />
-            <padding android:left="50dp" android:top="50dp" android:right="50dp" android:bottom="50dp" />
+            <padding android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp" />
         </shape>
     </item>
 </selector>
